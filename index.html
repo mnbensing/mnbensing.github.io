@@ -14,6 +14,17 @@
             color: #222;
         }
 
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 40px;
+        }
+
+        .header-text {
+            flex: 1;
+        }
+
         h1 {
             font-size: 2.2em;
             margin-bottom: 5px;
@@ -46,11 +57,19 @@
         nav a:hover {
             text-decoration: underline;
         }
+        .header-image {
+            width: 280px;
+            height: 160px;
+            object-fit: cover;
+        }
     </style>
 </head>
 
 <body>
 
+    <div class="header">
+
+    <div class="header-text">
     <h1>Michelle Bensing</h1>
 
     <div class="subtitle">
@@ -63,6 +82,15 @@
         <a href="#publications">Publications</a>
         <a href="#contact">Contact</a>
     </nav>
+    </div>
+
+    <img 
+        src="foto.jpg" 
+        alt="Description of the photo"
+        class="header-image"
+    >
+
+    </div>
 
     <h2 id="about">About</h2>
 
